@@ -257,13 +257,13 @@ def GetStep(board, is_black):
         play_turn=[1, 0]
     else:
         play_turn=[0, 1]
-    '''
+    
     board_class= MCTS(board, play_turn)
     x, y= board_class.get_action()
     '''
     x = random.randint(0, 7)
     y = random.randint(0, 7)
-    
+    '''
     return (x,y)
 
 first_time = True
